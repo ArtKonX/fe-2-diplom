@@ -59,7 +59,7 @@ const initialState = {
     dataPassengersArray: [],
     success: { status: false },
     loading: false,
-    url: `${import.meta.env.API_ROOT}/order`,
+    url: `${import.meta.env.VITE_BACKEND_URL}/order`,
     error: '',
 } as OrderState
 

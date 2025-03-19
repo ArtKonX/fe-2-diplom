@@ -19,11 +19,12 @@ const Direction = ({ directionValue, setDataUserDirection, className, name, plac
 
     const searchHandler = (value: string) => {
 
-        axios.get(`${import.meta.env.API_ROOT}/routes/cities?name=${value}`)
+        axios.get(`${import.meta.env.VITE_BACKEND_URL}/routes/cities?name=${value}`)
             .then(response => {
                 const data = response.data.map((city: { name: string }) => ({ value: city.name, label: city.name }));
                 setData(data);
             })
+
             .catch(error => {
                 console.error('Ошибка при получении данных:', error);
             });

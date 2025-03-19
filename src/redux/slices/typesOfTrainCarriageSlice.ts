@@ -39,7 +39,7 @@ export const typesOfTrainCarriageSlice = createSliceWithThunk({
                     const response = await apiRequests({
                         type: 'fetchTypesOfTrainCarriage',
                         payload: {
-                            url: `${import.meta.env.API_ROOT}/routes`,
+                            url: `${import.meta.env.VITE_BACKEND_URL}/routes`,
                             id: id
                         }
                     });
@@ -76,7 +76,7 @@ export const typesOfTrainCarriageSlice = createSliceWithThunk({
                     const response = await apiRequests({
                         type: 'fetchTypesOfTrainCarriage',
                         payload: {
-                            url: `${import.meta.env.API_ROOT}/routes`,
+                            url: `${import.meta.env.VITE_BACKEND_URL}/routes`,
                             id: id
                         }
                     });

@@ -233,12 +233,12 @@ export const fetchTrainsSlice = createSliceWithThunk({
                 try {
                     const state = getState() as { fetchTrains: FetchTrainsState };
 
-                    const url = `${import.meta.env.API_ROOT}/routes?from_city_id=${action.from}&to_city_id=${action.to}&date_start=${state.fetchTrains.date[0].from}&date_end=${state.fetchTrains.date[1].to}`;
+                    const url = `${import.meta.env.VITE_BACKEND_URL}/routes?from_city_id=${action.from}&to_city_id=${action.to}&date_start=${state.fetchTrains.date[0].from}&date_end=${state.fetchTrains.date[1].to}`;
 
                     const response = await apiRequests({
                         type: 'fetchTrains',
                         payload: {
-                            url: `${import.meta.env.API_ROOT}/routes`,
+                            url: `${import.meta.env.VITE_BACKEND_URL}/routes`,
                             from: action.from,
                             to: action.to,
                             date: [

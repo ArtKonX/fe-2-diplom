@@ -44,7 +44,7 @@ const Subscribe = () => {
     const dispatch = useDispatch();
 
     const subscribe = (email: string) => {
-        axios.post(`${import.meta.env.API_ROOT}/subscribe`, {
+        axios.post(`${import.meta.env.VITE_BACKEND_URL}/subscribe`, {
             email
         })
             .then(response => {
