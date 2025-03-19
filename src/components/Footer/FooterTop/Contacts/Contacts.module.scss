@@ -1,0 +1,52 @@
+.contacts-block {
+    background-color: #2D2B2F;
+    width: 100%;
+    padding: 45px 0 52px;
+
+    &__container {
+        max-width: 1332px;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__title {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-size: 30px;
+                color: #fff;
+                margin: 0;
+                margin-bottom: 22px;
+            }
+        }
+
+        .subscribe {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__title {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-size: 30px;
+                color: #fff;
+                margin: 0;
+                margin-bottom: 22px;
+            }
+
+            &__title-social {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-size: 30px;
+                color: #fff;
+                margin: 0;
+                margin-bottom: 28px;
+            }
+        }
+    }
+}

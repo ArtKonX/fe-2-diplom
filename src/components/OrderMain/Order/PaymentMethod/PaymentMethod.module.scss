@@ -1,0 +1,26 @@
+.payment-method {
+    border: 1px solid #c4c4c4;
+    margin-bottom: 123px;
+
+    &__current-and-link {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 35px;
+
+        .method {
+            margin-top: 44px;
+            margin-bottom: 76px;
+            font-weight: 400;
+            font-size: 24px;
+            color: #292929;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .link-change {
+            display: flex;
+            align-items: end;
+            border-left: 1px dashed #e5e5e5;
+            padding: 21px 0 21px 25px;
+        }
+    }
+}

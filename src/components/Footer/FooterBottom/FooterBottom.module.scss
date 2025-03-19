@@ -1,0 +1,21 @@
+.footer-bottom {
+    border-top: 1px solid #e5e5e5;
+    padding: 28px 0;
+    background-color: #2D2B2F;
+
+    &__container {
+        max-width: 1332px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__year {
+        min-width: 109px;
+        font-weight: 300;
+        font-size: 24px;
+        color: #e5e5e5;
+        font-family: "Roboto", sans-serif;
+        display: block;
+    }
+}

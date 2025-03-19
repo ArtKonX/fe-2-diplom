@@ -1,0 +1,21 @@
+.payment-main-container {
+    max-width: 1490px;
+    margin: 0 auto;
+    padding: 95px 0 193px;
+
+    .payment-main {
+        display: flex;
+        justify-content: space-between;
+
+        .sidebar {
+            max-width: 360px;
+            width: 100%;
+        }
+
+        .payment {
+            max-width: 959px;
+            width: 100%;
+            margin-left: 83px;
+        }
+    }
+}

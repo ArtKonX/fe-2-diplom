@@ -1,0 +1,19 @@
+.header-logo_container, .header-logo {
+    max-width: 1325px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+
+    .header-logo__title {
+        font-family: "Roboto", sans-serif;
+        color: #E5E5E5;
+        font-size: 36px;
+        margin: 0;
+        font-weight: 900;
+        transition: 1s;
+
+        &:hover {
+            color: rgb(255, 157, 0);
+        }
+    }
+}

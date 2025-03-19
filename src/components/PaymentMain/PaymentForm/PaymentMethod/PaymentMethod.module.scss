@@ -1,0 +1,48 @@
+.payment-method {
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+
+    &__main-content {
+
+        .payment-online-methods-block, .payment-cash-methods-block {
+            padding: 50px 35px 64px;
+            border-bottom: 1px dashed #928f94;
+
+            .payment-method-label {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 24px;
+                color: #928f94;
+            }
+
+            .payment-online-methods {
+                display: flex;
+                padding: 0;
+                list-style: none;
+                margin-top: 30px;
+                max-width: 625px;
+                width: 100%;
+                justify-content: space-between;
+                align-items: start;
+
+                &__elem {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #292929;
+
+                    &:first-child {
+                        max-width: 135px;
+                    }
+                }
+            }
+        }
+
+        .payment-cash-methods-block {
+            padding: 58px 35px 82px;
+            border-bottom: none;
+        }
+    }
+
+}

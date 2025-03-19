@@ -1,0 +1,26 @@
+.loader-block {
+    max-height: 1100px;
+    min-height: 900px;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #3e3c41;
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #928f94;
+        font-family: "Roboto", sans-serif;
+    }
+
+    &__loader-gif {
+        width: 35%;
+        height: 300px;
+        object-fit: cover;
+    }
+}

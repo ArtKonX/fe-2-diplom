@@ -1,0 +1,81 @@
+.ant-pagination-item {
+    border: 2px solid #c4c4c4 !important;
+    margin-left: 35px !important;
+
+    a {
+        font-family: "Roboto", sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 30px !important;
+        color: #928f94 !important;
+    }
+
+    &:hover {
+        border: 2px solid #FFA800 !important;
+        background-color: transparent !important;
+
+        a {
+            font-family: "Roboto", sans-serif !important;
+            font-weight: 700 !important;
+            font-size: 30px !important;
+            color: #FFA800 !important;
+        }
+    }
+}
+
+.ant-pagination-item-3 {
+    margin-right: 0 !important;
+}
+
+.ant-pagination-item-active {
+    border: 2px solid #FFA800 !important;
+    color: wheat !important;
+
+    a {
+        color: white !important;
+    }
+}
+
+.anticon {
+    font-size: 1.1rem !important;
+
+    svg {
+        fill: #928f94 !important;
+    }
+}
+
+.ant-pagination-item-link {
+    border: 2px solid #c4c4c4 !important;
+    font-size: 1.1rem !important;
+
+    &:hover {
+        border: 2px solid #FFA800 !important;
+        background-color: transparent !important;
+        font-size: 1.1rem !important;
+
+        svg {
+            fill: #FFA800 !important;
+        }
+    }
+}
+
+.ant-pagination-next {
+    margin-left: 35px !important;
+    margin-right: 35px !important;
+}
+
+.ant-pagination-prev {
+    margin-right: 0 !important;
+}
+
+.ant-pagination-item-link {
+    border: none !important;
+    margin: 0 !important;
+
+    &:hover {
+        border: none !important;
+    }
+}
+
+.ant-pagination-jump-next, .ant-pagination-jump-prev {
+    margin-left: 35px !important;
+}

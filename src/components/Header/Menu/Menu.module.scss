@@ -1,0 +1,35 @@
+.header-menu {
+    width: 100%;
+    background-color: #292929;
+    min-height: 94px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 253px;
+
+    .header-nav_container {
+        max-width: 1325px;
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        display: flex;
+
+        .header-nav__elem {
+            &:not(:last-child) {
+                margin-right: 83px;
+            }
+
+            .header-nav__link {
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                font-size: 30px;
+                color: #fff;
+                text-decoration: none;
+                transition: 1s;
+
+                &:hover {
+                    color: #2c99ff;
+                }
+            }
+        }
+    }
+}

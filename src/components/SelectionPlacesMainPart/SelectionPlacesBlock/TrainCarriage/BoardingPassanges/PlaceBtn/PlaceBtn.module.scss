@@ -1,0 +1,127 @@
+.btn-place-fourth {
+    cursor: pointer;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_active {
+        border: 2px solid #FFA800;
+    }
+
+    &:disabled {
+        background-color: rgb(192, 192, 192);
+        color: white;
+        cursor: auto;
+    }
+}
+
+.btn-place-third {
+    cursor: pointer;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_active {
+        border: 2px solid #FFA800;
+    }
+
+    &:disabled {
+        background-color: rgb(192, 192, 192);
+        color: white;
+        cursor: auto;
+    }
+}
+
+.btn-place-third-bottom {
+    cursor: pointer;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_active {
+        border: 2px solid #FFA800;
+    }
+
+    &:disabled {
+        background-color: rgb(192, 192, 192);
+        color: white;
+        cursor: auto;
+    }
+}
+
+.btn-place-first {
+    cursor: pointer;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_active {
+        border: 2px solid #FFA800;
+    }
+
+    &:disabled {
+        background-color: rgb(192, 192, 192);
+        color: white;
+        cursor: auto;
+    }
+}
+
+.btn-place-second {
+    cursor: pointer;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_active {
+        border: 2px solid #FFA800;
+    }
+
+    &:disabled {
+        background-color: rgb(192, 192, 192);
+        color: white;
+        cursor: auto;
+    }
+}

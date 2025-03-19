@@ -1,0 +1,56 @@
+.feedbacks__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 122px;
+    padding: 0;
+
+    .feedback {
+        display: flex;
+        align-items: center;
+
+        &__avatar {
+            width: 206px;
+        }
+
+        &__name-and-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 35px;
+            max-width: 362px;
+
+            .feedback__name {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                color: #000;
+                margin: 0;
+            }
+
+            .feedback__text {
+                font-family: "Roboto", sans-serif;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 18px;
+                color: #928f94;
+                position: relative;
+
+                .feedback__symbol {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 500;
+                    font-size: 36px;
+                    color: #928f94;
+                    position: absolute;
+
+                    &_open {
+                        left: -17px;
+                        top: -10px;
+                    }
+
+                    &_closed {
+                        bottom: -31px;
+                    }
+                }
+            }
+        }
+    }
+}

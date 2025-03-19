@@ -1,0 +1,26 @@
+.about-us {
+    background-color: white;
+    padding: 144px 0 91px;
+
+    &__container {
+        max-width: 1325px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #292929;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    &__information {
+        border-left: 9px solid #ffa800;
+        padding-left: 19px;
+        max-width: 1150px;
+    }
+}

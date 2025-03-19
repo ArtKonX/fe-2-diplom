@@ -1,0 +1,48 @@
+.passenger {
+    width: 100%;
+    padding: 33px 35px 32px;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    margin-bottom: 46px;
+    background: #fff;
+    position: relative;
+
+    .revealing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .remove-card {
+            color: #928F94;
+            font-size: 1.5rem;
+            font-family: "Roboto", sans-serif;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        &__button-and-info {
+            display: flex;
+            align-items: center;
+
+            .revealing-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+                margin-right: 16px;
+            }
+
+            .title-info-passenger {
+                font-weight: 400;
+                font-size: 30px;
+                color: #292929;
+                font-family: "Roboto", sans-serif;
+                margin: 0;
+            }
+        }
+    }
+}

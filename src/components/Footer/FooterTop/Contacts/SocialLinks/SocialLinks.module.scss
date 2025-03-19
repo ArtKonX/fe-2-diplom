@@ -1,0 +1,79 @@
+.social-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+
+    .social-elem {
+
+        .social-link {
+            background-size: 30px;
+            background-repeat: no-repeat;
+            display: block;
+            margin-right: 48px;
+
+            &_youtube {
+                background-image: url('../../../../../assets/icons/social1.svg');
+                width: 38px;
+                height: 24px;
+
+                &:hover {
+                    background-image: url('../../../../../assets/icons/hover/social1.svg');
+                }
+            }
+
+            &_linkedin {
+                background-image: url('../../../../../assets/icons/social2.svg');
+                width: 31px;
+                height: 30px;
+
+                &:hover {
+                    background-image: url('../../../../../assets/icons/hover/social2.svg');
+                }
+            }
+
+            &_google {
+                background-image: url('../../../../../assets/icons/social3.svg');
+                width: 46.5px;
+                height: 30px;
+                background-size: 42px;
+
+                &:hover {
+                    background-image: url('../../../../../assets/icons/hover/social3.svg');
+                }
+            }
+
+            &_facebook {
+                background-image: url('../../../../../assets/icons/social4.svg');
+                width: 14px;
+                height: 30px;
+                background-size: 13px;
+
+                &:hover {
+                    background-image: url('../../../../../assets/icons/hover/social4.svg');
+                }
+            }
+
+            &_twitter {
+                background-image: url('../../../../../assets/icons/social5.svg');
+                width: 37px;
+                height: 24px;
+                margin-right: 0;
+
+                &:hover {
+                    background-image: url('../../../../../assets/icons/hover/social5.svg');
+                }
+            }
+        }
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+}

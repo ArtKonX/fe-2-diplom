@@ -1,0 +1,41 @@
+.date__from,
+.date__there {
+    padding: 19px 21px;
+    border-radius: 3px;
+    background: #fff;
+    box-sizing: border-box;
+    border: none;
+    max-width: 325px;
+    width: 100%;
+    height: 60px;
+    color: #e5e5e5;
+}
+
+.ant-picker-disabled {
+    background: #fff !important;
+}
+
+.date__from {
+    margin-right: 47px;
+}
+
+.ant-picker-input {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    color: #292929 !important;
+
+    input::placeholder {
+        text-transform: uppercase !important;
+    }
+}
+.ant-picker-cell-selected {
+    .ant-picker-cell-inner {
+        background: rgba(255, 168, 0, 0.31) !important;
+        color: #292929 !important;
+    }
+}
+
+.ant-picker-now-btn {
+    color: #292929 !important;
+}

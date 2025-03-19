@@ -1,0 +1,40 @@
+.link-to-go {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    width: 222px;
+    height: 60px;
+    background-color: #FFA800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #ffa800;
+    transition: 1s;
+
+    &:hover {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        border: 1px solid #ffa800;
+    }
+
+    &:active {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        border: 1px solid #ffa800;
+        color: #FFA800;
+        background-color: transparent;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.link-to-go_disabled {
+    background: #928f94 !important;
+    border: 1px solid #928f94;
+    pointer-events: none;
+}

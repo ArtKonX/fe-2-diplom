@@ -1,0 +1,194 @@
+.passenger-form-elem {
+    margin-top: 38px;
+
+    .dropdown-age {
+        margin-bottom: 45px;
+    }
+
+    .inputs-names {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .checkbox-gender-and-date-of-birth-input {
+        display: flex;
+        margin-bottom: 45px;
+    }
+
+    .checkbox-limitations-container {
+        padding-bottom: 31px;
+
+        &::after {
+            content: '';
+            border-bottom: 1px dashed #928f94;
+            width: calc(100%);
+            position: absolute;
+            left: 0;
+            padding-bottom: 31px;
+        }
+    }
+
+    .type-document-and-input {
+        padding-bottom: 77px;
+
+        &::after {
+            content: '';
+            border-bottom: 1px dashed #928f94;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            padding-bottom: 33px;
+        }
+    }
+
+    .type-document-and-input {
+        margin-top: 37px;
+    }
+
+    .next-passenger {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        &_success {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &::after {
+                content: "";
+                width: calc(100% + 35px + 35px);
+                height: calc(100% + 32px + 43px);
+                position: absolute;
+                top: -43px;
+                left: -35px;
+                background: #b2f6a1;
+            }
+        }
+
+        &_error {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 200;
+
+            &::after {
+                content: "";
+                width: calc(100% + 35px + 35px);
+                height: calc(100% + 32px + 43px);
+                position: absolute;
+                top: -43px;
+                left: -35px;
+                background: rgba(255, 61, 0, 0.38);
+                z-index: 200;
+            }
+        }
+
+        .error-text-block {
+            display: flex;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #292929;
+            z-index: 201;
+            flex-direction: row-reverse;
+            align-items: center;
+            max-width: 480px;
+
+            .error-text-bolt {
+                font-weight: 700;
+            }
+
+            &::after {
+                content: "";
+                background-image: url('../../../../assets/svg/cross-radius.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 32px;
+                width: 32px;
+                height: 32px;
+                display: block;
+                padding-right: 20px;
+                margin-right: 16px;
+                z-index: 201;
+            }
+        }
+
+        .success-text {
+            display: flex;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #fff;
+            z-index: 100;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            &::after {
+                content: "";
+                background-image: url('../../../../assets/icons/success.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 32px;
+                width: 32px;
+                height: 32px;
+                display: block;
+                padding-right: 15px;
+            }
+        }
+
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            z-index: 100;
+            font-size: 24px;
+            text-align: center;
+            color: #292929;
+            font-family: "Roboto", sans-serif;
+            border: 1px solid #292929;
+            border-radius: 5px;
+            width: 303px;
+            height: 52px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 1s;
+            text-decoration: none;
+
+            &:hover {
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                color: #ffa800;
+            }
+
+            &:active {
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                background: #ffa800;
+                border: 1px solid #ffa800;
+                color: #292929;
+            }
+
+            // &:disabled {
+            //     cursor: not-allowed;
+            //     opacity: 0.8;
+
+            //     &:hover {
+            //         box-shadow: none;
+            //         color: rgba(0, 0, 0, 0.8);
+            //     }
+
+            //     &:active {
+            //         color: rgba(0, 0, 0, 0.8);
+            //         box-shadow: none;
+            //         background: transparent;
+            //         border: 1px solid #292929;
+            //     }
+            // }
+        }
+    }
+}

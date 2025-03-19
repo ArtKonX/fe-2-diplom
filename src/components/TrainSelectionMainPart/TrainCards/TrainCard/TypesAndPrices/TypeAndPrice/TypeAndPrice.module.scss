@@ -1,0 +1,49 @@
+.type-and-price {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+
+    &__type {
+        font-weight: 400;
+        font-size: 16px;
+        color: #3e3c41;
+        font-family: "Roboto", sans-serif;
+        position: absolute;
+        left: 0;
+    }
+
+    &__number-places-btn {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffa800;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        right: 111px;
+    }
+
+    &__min-price {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #2d2b2f;
+        margin: 0;
+    }
+
+    &__from {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #928f94;
+        margin-right: 5px;
+    }
+
+    &__currency-img {
+        width: 16px;
+        margin-left: 3px;
+    }
+}

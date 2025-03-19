@@ -1,0 +1,123 @@
+.select-age {
+    max-width: 280px;
+    width: 100%;
+    border: 1px solid #928f94;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .ant-select-arrow {
+        display: flex !important;
+    }
+
+    .ant-select-selection-item {
+        font-weight: 400 !important;
+        font-size: 24px !important;
+        color: #292929 !important;
+        font-family: "Roboto", sans-serif !important;
+    }
+
+    .ant-select-item {
+        font-weight: 400 !important;
+        font-size: 24px !important;
+        color: #292929 !important;
+        font-family: "Roboto", sans-serif !important;
+    }
+}
+
+.select-birth-certificate,
+.select-passport {
+
+
+    .select-birth-certificate__text, .select-passport__text {
+        margin-top: -17px;
+    }
+
+    .ant-select-disabled {
+        .ant-select-selector {
+            border: 1px solid #928f94 !important;
+            border-radius: 5px;
+            width: 444px;
+            box-sizing: border-box;
+            display: flex;
+            padding: 13px 10px !important;
+            justify-content: center;
+            height: 50px !important;
+            align-items: center;
+            background-color: white !important;
+
+            .ant-select-selection-item {
+                font-weight: 400;
+                font-size: 18px;
+                color: #292929;
+                font-family: "Roboto", sans-serif !important;
+                padding: 14px;
+            }
+        }
+
+        .ant-select-arrow {
+            display: flex !important;
+        }
+
+        .ant-select-arrow {
+            margin-top: 0px;
+            top: 62%;
+            margin-right: 10px;
+        }
+    }
+}
+
+.select-passport {
+    .ant-select-disabled {
+        .ant-select-selector {
+            width: 205px;
+        }
+    }
+}
+
+
+
+.select-age {
+    .ant-select-disabled {
+        .ant-select-selector {
+            background-color: white !important;
+        }
+    }
+
+    .ant-select-arrow {
+        margin-top: 0px !important;
+        top: 45% !important;
+    }
+
+}
+
+.select-passport,
+.select-birth-certificate {
+    max-width: 205px;
+    width: 100%;
+    margin-right: 35px;
+
+    &__text {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #928f94;
+        margin-bottom: 16px;
+        display: block;
+    }
+
+    .ant-select-selection-item {
+        font-weight: 400 !important;
+        font-size: 18px !important;
+        color: #292929 !important;
+        font-family: "Roboto", sans-serif !important;
+    }
+}
+
+.select-birth-certificate {
+    max-width: 444px;
+}
+
+.ant-select-selector {
+    border: 1px solid #928F94 !important;
+}

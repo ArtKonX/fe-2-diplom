@@ -1,0 +1,46 @@
+.checkbox-limitations-block {
+    display: flex;
+    align-items: center;
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__checkbox+label {
+        position: relative;
+        font-weight: 400;
+        font-size: 18px;
+        color: #292929;
+        font-family: "Roboto", sans-serif;
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+        user-select: none;
+        height: 28px;
+        cursor: pointer;
+    }
+
+    &__checkbox+label::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 1px solid #928f94;
+        border-radius: 5px;
+        width: 28px;
+        height: 28px;
+        background: #fff;
+    }
+
+    &__checkbox:checked+label::before {
+        border-color: #FFA800;
+        background-image: url('../../../../../assets//icons/checkmark.svg');
+        background-size: 23px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__checkbox:checked+label {
+        color: #FFA800;
+    }
+}

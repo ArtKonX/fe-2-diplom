@@ -1,0 +1,14 @@
+.footer-bottom__link-up-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .link-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #E5E5E5;
+        padding: 14px 10px;
+        border-radius: 50%;
+    }
+}

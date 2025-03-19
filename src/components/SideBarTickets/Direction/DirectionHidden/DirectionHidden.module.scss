@@ -1,0 +1,49 @@
+.direction {
+    padding: 27px 30px 32px;
+    border-bottom: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    background-color: #3E3C41;
+
+    &__demo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img-name {
+        display: flex;
+    }
+
+    &__name {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: #fff;
+        margin-left: 12px;
+    }
+
+    &__action {
+        border: 2px solid #fff;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        color: #FFFFFF;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__action-text {
+        margin-top: 0.7px;
+        margin-left: 1.2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 27px;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+    }
+}

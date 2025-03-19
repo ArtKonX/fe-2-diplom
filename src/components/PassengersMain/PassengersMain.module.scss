@@ -1,0 +1,26 @@
+.passengers-main-container {
+    max-width: 1490px;
+    margin: 0 auto;
+    padding: 95px 0 193px;
+
+    .passengers-main {
+        display: flex;
+        justify-content: space-between;
+
+        .sidebar {
+            max-width: 360px;
+            width: 100%;
+        }
+
+        .passengers {
+            max-width: 959px;
+            width: 100%;
+            margin-left: 83px;
+        }
+
+        .link-next-page-block {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.train-card, .order-train-card {
+    margin-bottom: 47px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #c4c4c4;
+    display: flex;
+
+    .name-and-direction-train {
+        padding: 58px 18px 32px 26px;
+        background: #e4e0e9;
+        max-width: 203px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .time-and-direction {
+        background: #fff;
+        padding: 54px 36px 80px 39px;
+        border-right: 1px dashed #e5e5e5;
+        max-width: 479px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .seats-and-price {
+        max-width: 284px;
+        width: 100%;
+        padding: 43px 22px 24px 27px;
+        background: #fff;
+        box-sizing: border-box;
+    }
+}
+
+.order-train-card {
+    margin-bottom: 0;
+    border: none;
+}

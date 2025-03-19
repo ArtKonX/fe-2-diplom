@@ -1,0 +1,26 @@
+.train-selection-sidebar__dates-actions {
+    background-color: #3E3C41;
+    padding: 43px 36px 33px;
+    border-bottom: 1px solid #e5e5e5;
+
+    .train-selection-sidebar__date-from {
+        margin-bottom: 26px;
+    }
+
+    .train-selection-sidebar__from-date-title,
+    .train-selection-sidebar__date-there-title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 30px;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .train-selection-sidebar__date-from,
+    .train-selection-sidebar__data-there {
+        max-width: 295px;
+        width: 100%;
+        padding: 11px 10px;
+    }
+}

@@ -1,0 +1,80 @@
+.ticket {
+    box-shadow: 0 2px 2px 0 rgba(62, 60, 65, 0.25);
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    padding: 18px 12px 16px;
+    margin-bottom: 17px;
+
+    .directions {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 29px;
+
+        .direction {
+
+            &__from,
+            &__to {
+                display: flex;
+                flex-direction: column;
+
+                .direction__city,
+                .direction__station {
+                    display: block;
+                }
+
+                .direction__city {
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #292929;
+                    font-family: "Roboto", sans-serif;
+                    text-transform: capitalize;
+                    margin-bottom: 7px;
+                }
+
+                .direction__station {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #928f94;
+                    font-family: "Roboto", sans-serif;
+                    max-width: 105px;
+                }
+            }
+
+            &__to {
+                .direction__city {
+                    text-align: end;
+                }
+
+                .direction__station {
+                    text-align: end;
+                }
+            }
+        }
+    }
+
+    .options-and-min-price {
+        display: flex;
+        justify-content: space-between;
+
+        .min-price {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: #ffa800;
+
+            &__from {
+                font-weight: 400;
+                font-size: 16px;
+                text-align: right;
+                color: #928f94;
+                font-family: "Roboto", sans-serif;
+                margin-right: 4px;
+            }
+
+            &__currency-img {
+                width: 20px;
+                margin-left: 4px;
+            }
+        }
+    }
+}

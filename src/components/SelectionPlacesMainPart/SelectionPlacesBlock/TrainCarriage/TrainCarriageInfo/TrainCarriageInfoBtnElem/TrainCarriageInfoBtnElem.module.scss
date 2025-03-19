@@ -1,0 +1,13 @@
+.number-carriage-elem__button {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &_active {
+        color: #fff;
+    }
+}

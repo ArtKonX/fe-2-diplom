@@ -1,0 +1,67 @@
+.contacts__list {
+    list-style: none;
+    padding: 0;
+
+    .contact {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &__link, &__position {
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            font-weight: 400;
+            font-size: 24px;
+            color: #e5e5e5;
+            font-family: "Roboto", sans-serif;
+
+            &:hover {
+                color: #FFCA62;
+            }
+        }
+
+        &__icon {
+            margin-right: 36px;
+            display: block;
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: center;
+            width: 30px;
+            height: 30px;
+
+            &_phone {
+                background-image: url('../../../../../assets/icons/contact1.svg');
+            }
+
+            &_letter {
+                background-image: url('../../../../../assets/icons/contact2.svg');
+            }
+
+            &_skype {
+                background-image: url('../../../../../assets/icons/contact3.svg');
+            }
+
+            &_geoposition {
+                background-image: url('../../../../../assets/icons/contact4.svg');
+                background-size: 20px;
+            }
+        }
+
+        &__link:hover .contact__icon_phone {
+            background-image: url('../../../../../assets/icons/hover/contact1.svg');
+        }
+
+        &__link:hover .contact__icon_letter {
+            background-image: url('../../../../../assets/icons/hover/contact2.svg');
+        }
+
+        &__link:hover .contact__icon_skype {
+            background-image: url('../../../../../assets/icons/hover/contact3.svg');
+        }
+
+        &__position:hover .contact__icon_geoposition {
+            background-image: url('../../../../../assets/icons/hover/contact4.svg');
+        }
+    }
+}

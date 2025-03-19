@@ -1,0 +1,152 @@
+.direction-detail-all {
+    width: 100%;
+    margin-top: 53px;
+
+    .number-train {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 22px;
+
+        &__number-text {
+            font-weight: 400;
+            font-size: 18px;
+            color: #e5e5e5;
+            font-family: "Roboto", sans-serif;
+        }
+
+        &__number-name {
+            font-weight: 700;
+            font-size: 24px;
+            text-align: right;
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+
+    .name-places {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 46px;
+
+        &__name-text {
+            font-weight: 400;
+            font-size: 18px;
+            color: #e5e5e5;
+            font-family: "Roboto", sans-serif;
+        }
+
+        &__directions {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            .name-place-elem {
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                text-align: right;
+                color: #fff;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .dates-and-time-train {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 17px;
+
+        &__time-and-date-first,
+        &__time-and-date-second {
+            display: flex;
+            flex-direction: column;
+
+            .time {
+                font-weight: 700;
+                font-size: 24px;
+                color: #fff;
+                font-family: "Roboto", sans-serif;
+                margin-bottom: 10px;
+            }
+
+            .date {
+                font-weight: 400;
+                font-size: 18px;
+                color: #928f94;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        &__time-and-date-first {
+            .time {
+                text-align: start;
+            }
+        }
+
+        &__time-and-date-second {
+            .time {
+                text-align: end;
+            }
+        }
+
+        &__arrow-time {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 33px;
+
+            .time {
+                font-weight: 400;
+                font-size: 18px;
+                color: #e5e5e5;
+                font-family: "Roboto", sans-serif;
+                margin-bottom: 7px;
+            }
+
+            .arrow {
+                width: 30px;
+            }
+        }
+    }
+
+    .cities-and-stations-train {
+        &__cities {
+            display: flex;
+            justify-content: space-between;
+
+            .city-first,
+            .city-second {
+                font-weight: 400;
+                font-size: 18px;
+                color: #fff;
+                font-family: "Roboto", sans-serif;
+                text-transform: capitalize;
+                margin-bottom: 7px;
+            }
+        }
+
+        &__stations {
+            display: flex;
+            justify-content: space-between;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            color: #928f94;
+            font-weight: 400;
+
+            .station-first {
+                text-align: start;
+            }
+
+            .station-second {
+                text-align: end;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.link-change {
+    text-decoration: none;
+    border: 1px solid #292929;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 233px;
+    height: 39px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #292929;
+    font-family: "Roboto", sans-serif;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        color: #ffa800;
+        background-color: transparent;
+    }
+
+    &:active {
+        border: 1px solid #ffa800;
+        color: #292929;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: #ffa800;
+    }
+}
+
+.back-to-main {
+    width: 323px;
+    height: 60px;
+    text-transform: uppercase;
+}

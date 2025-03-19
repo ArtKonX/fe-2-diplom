@@ -1,0 +1,106 @@
+.pop-up-window-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #41414178;
+    z-index: 10;
+
+    .pop-up-window {
+        width: 666px;
+        border: 1px solid #c4c4c4;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+
+        &__top {
+            padding: 41px 38px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            border-bottom: 1px dashed #928F94;
+
+            &_error {
+                background-color: rgba(255, 61, 0, 0.78);
+            }
+
+            &_info {
+                background-color: rgba(255, 245, 0, 0.78);
+            }
+        }
+
+        &__middle {
+            text-align: left;
+            border-bottom: 1px dashed #928F94;
+            padding: 46px 47px 70px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 1);
+
+            .pop-up-window-title {
+                padding: 0;
+                margin: 0;
+                margin-bottom: 40px;
+
+                &_warning {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #000;
+                }
+
+                &_error {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: #000;
+                }
+            }
+
+            .pop-up-window-text {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                color: #000;
+            }
+        }
+
+        .pop-up-window__bottom {
+            padding: 31px 20px 23px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 1);
+
+            .pop-up-window-close {
+                font-family: "Roboto", sans-serif;
+                background-color: transparent;
+                border: 1px solid #292929;
+                border-radius: 5px;
+                width: 233px;
+                height: 52px;
+                transition: 1s;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 24px;
+                text-align: center;
+                color: #292929;
+
+                &:hover {
+                    color: #ffa800;
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                }
+
+                &:active {
+                    color: #292929;
+                    border: 1px solid #ffa800;
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                    background: #ffa800;
+                }
+            }
+        }
+    }
+}

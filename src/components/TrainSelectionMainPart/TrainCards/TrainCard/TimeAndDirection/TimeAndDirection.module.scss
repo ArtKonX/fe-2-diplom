@@ -1,0 +1,60 @@
+.time-and-direction {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 46px;
+
+    &:last-child{
+        margin-bottom: 0px;
+    }
+
+    .start-direction,
+    .end-direction {
+        max-width: 150px;
+        &__time {
+            font-weight: 700;
+            font-size: 24px;
+            color: #000;
+            font-family: "Roboto", sans-serif;
+        }
+
+        &__city {
+            font-weight: 400;
+            font-size: 18px;
+            color: #292929;
+            font-family: "Roboto", sans-serif;
+            text-transform: capitalize;
+            margin: 0;
+            margin-top: 5px;
+        }
+
+        &__railway-station {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #928f94;
+            margin: 0;
+        }
+    }
+
+    .time-and-arrow {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        // margin-left: 40px;
+        // margin-right: 40px;
+
+        &__all-time {
+            font-weight: 400;
+            font-size: 18px;
+            color: #c4c4c4;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 7px;
+        }
+
+        &__arrow-img {
+            width: 30px;
+        }
+    }
+}

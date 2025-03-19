@@ -1,0 +1,25 @@
+.link-to-go-selection-places {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 33px 35px 32px;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    margin-bottom: 46px;
+    background: #fff;
+    position: relative;
+
+    &__text {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: #292929;
+    }
+
+    &__plus {
+        color: #FFA800;
+        font-size: 2rem;
+    }
+}

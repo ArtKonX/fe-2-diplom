@@ -1,0 +1,18 @@
+.time-slider {
+
+    &__title-from {
+        text-align: left;
+    }
+
+    &__title-after {
+        text-align: right;
+    }
+
+    &__title-after,
+    &__title-from {
+        font-weight: 400;
+        font-size: 24px;
+        color: #e5e5e5;
+        font-family: "Roboto", sans-serif;
+    }
+}

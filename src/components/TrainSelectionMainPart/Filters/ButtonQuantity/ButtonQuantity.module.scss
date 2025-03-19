@@ -1,0 +1,14 @@
+.button-quantity {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #928f94;
+    font-family: "Roboto", sans-serif;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &_active {
+        color: #292929;
+    }
+}

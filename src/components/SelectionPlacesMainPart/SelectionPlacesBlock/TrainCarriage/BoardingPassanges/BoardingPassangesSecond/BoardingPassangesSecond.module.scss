@@ -1,0 +1,86 @@
+.boarding-passanges-group {
+    display: flex;
+    justify-content: center;
+
+    .boarding-passanges-group__container {
+        margin-top: 67px;
+        margin-bottom: 67px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .boarding-passanges-group-top {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: 20px;
+            border-top: 3px solid gray;
+            border-right: 3px solid gray;
+
+            &__list-top,
+            &__list-bottom {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                border-left: 4px solid gray;
+            }
+
+            &__list-top {
+                .boarding-passanges-group-top__elem-top:nth-child(2n) {
+                    margin-left: 20px;
+                    border-right: 4px solid gray;
+                }
+
+                .boarding-passanges-group-top__elem-top:last-child {
+                    border-right: none;
+                }
+
+                .boarding-passanges-group-top__elem-top {
+                    width: 30px;
+                    height: 45px;
+                }
+            }
+
+            &__list-bottom {
+                .boarding-passanges-group-top__elem-bottom:nth-child(2n) {
+                    margin-left: 20px;
+                    border-right: 4px solid gray;
+                }
+
+                .boarding-passanges-group-top__elem-bottom:last-child {
+                    border-right: none;
+                }
+
+                .boarding-passanges-group-top__elem-bottom {
+                    width: 30px;
+                    height: 45px;
+                }
+            }
+        }
+
+        .boarding-passanges-group-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__list {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                border-left: 4px solid gray;
+                border-bottom: 3px solid gray;
+            }
+
+            .boarding-passanges-group-bottom__elem-bottom:nth-child(2n) {
+                border-right: 4px solid gray;
+            }
+
+            &__elem-bottom {
+                height: 30px;
+                width: 40px;
+            }
+        }
+    }
+}

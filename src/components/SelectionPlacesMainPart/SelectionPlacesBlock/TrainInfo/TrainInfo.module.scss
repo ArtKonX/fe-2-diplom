@@ -1,0 +1,121 @@
+.train-info {
+    display: flex;
+    background: #f7f6f6;
+    margin-top: 32px;
+    max-height: 123px;
+
+    .directions {
+        box-sizing: border-box;
+        padding: 17px 0 17px 33px;
+        display: flex;
+        align-items: center;
+        max-width: 240px;
+        width: 100%;
+        border-right: 1px solid #fff;
+        box-sizing: border-box;
+
+        &__img-train {
+            width: 30px;
+            margin-right: 27px;
+        }
+
+        .train-name {
+            margin: 0;
+            font-weight: 700;
+            font-size: 24px;
+            color: #3e3c41;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 5px;
+        }
+
+        .direction-from-and-to {
+            display: flex;
+            flex-direction: column;
+
+            .direction-from,
+            .direction-to {
+                font-weight: 400;
+                font-size: 16px;
+                color: #292929;
+                font-family: "Roboto", sans-serif;
+                text-transform: capitalize;
+            }
+
+            .direction-from {
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    .direction {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 28px 36px;
+        border-right: 1px solid #fff;
+        max-width: 480px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .start-direction,
+        .end-direction {
+            max-width: 150px;
+            
+            &__time {
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                color: #000;
+            }
+
+            &__city {
+                text-transform: capitalize;
+                margin: 0;
+                margin-top: 5px;
+                font-weight: 400;
+                font-size: 18px;
+                color: #292929;
+                font-family: "Roboto", sans-serif;
+            }
+
+            &__railway-station {
+                font-weight: 400;
+                font-size: 16px;
+                color: #928f94;
+                font-family: "Roboto", sans-serif;
+                margin: 0;
+            }
+
+            &__img {
+                width: 30px;
+            }
+        }
+    }
+
+    .all-time {
+        display: flex;
+        align-items: center;
+        padding: 47px 33px 41px 35px;
+        max-width: 238px;
+        width: 100%;
+        box-sizing: border-box;
+
+        &__img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        &__data-time {
+            display: flex;
+            flex-direction: column;
+
+            .hours,
+            .minutes {
+                font-weight: 400;
+                font-size: 18px;
+                color: #000;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+    }
+}

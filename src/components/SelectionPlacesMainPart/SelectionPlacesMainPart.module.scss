@@ -1,0 +1,68 @@
+.main-part-container {
+    max-width: 1490px;
+    margin: 0 auto;
+    padding: 95px 0 193px;
+}
+
+.main-part {
+    display: flex;
+    justify-content: space-between;
+
+    .sidebar-and-last-tickets {
+        max-width: 360px;
+        width: 100%;
+    }
+
+    .main-content {
+        max-width: 959px;
+        width: 100%;
+        margin-left: 83px;
+
+        &__title {
+            font-weight: 500;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #292929;
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            margin-bottom: 48px;
+        }
+
+        &__link-block {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            margin-top: 102px;
+
+            .link-to-go-passengers {
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                width: 222px;
+                height: 60px;
+                font-family: "Roboto", sans-serif;
+                background: #ffa800;
+                font-weight: 700;
+                font-size: 24px;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fff;
+                transition: 1s;
+                border: 1px solid transparent;
+
+                &:hover {
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                }
+
+                &:active {
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                    border: 1px solid #ffa800;
+                    color: #ffa800;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__name {
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+    }
+}

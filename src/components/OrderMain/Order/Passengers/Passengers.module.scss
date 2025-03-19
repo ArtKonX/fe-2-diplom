@@ -1,0 +1,9 @@
+.passengers {
+    border: 1px solid #c4c4c4;
+    margin-bottom: 45px;
+
+    .passengers-list-and-all-price {
+        display: flex;
+        justify-content: space-between;
+    }
+}

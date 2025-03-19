@@ -1,0 +1,43 @@
+.order-success-info-container {
+    background: #f4f3f6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    border-top: 1px solid #c4c4c4;
+
+    .order-success-info {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        max-width: 776px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__elem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .success-info-img {
+                width: 155px;
+                margin-bottom: 15px;
+            }
+
+            .success-info-text {
+                display: block;
+                font-weight: 400;
+                font-size: 18px;
+                text-align: center;
+                color: #292929;
+                font-family: "Roboto", sans-serif;
+
+                &__color {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

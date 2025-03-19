@@ -1,0 +1,31 @@
+.text-about-success-order {
+    padding: 95px 205px 129px;
+    background-color: #FFFFFF;
+    border-right: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+
+    &__title {
+        margin: 0;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        color: #292929;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 51px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        color: #292929;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 80px;
+    }
+
+    &__thankfulness {
+        font-weight: 700;
+        font-size: 24px;
+        color: #292929;
+        font-family: "Roboto", sans-serif;
+    }
+}

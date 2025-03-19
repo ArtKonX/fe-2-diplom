@@ -1,0 +1,31 @@
+.all-price {
+    box-sizing: border-box;
+    background-color: #3E3C41;
+    width: 100%;
+    padding: 30px 27px;
+    min-height: 109px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    &__text {
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+    }
+
+    &__price {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        color: #ffa800;
+
+        .price-currency {
+            width: 26px;
+            margin-left: 7px;
+        }
+    }
+}

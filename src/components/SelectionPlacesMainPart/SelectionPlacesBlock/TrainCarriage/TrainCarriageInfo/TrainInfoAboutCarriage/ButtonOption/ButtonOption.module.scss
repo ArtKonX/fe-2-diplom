@@ -1,0 +1,23 @@
+.btn-option {
+    display: block;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    width: 36px;
+    height: 34px;
+    transition: 1s;
+    cursor: pointer;
+    background-color: transparent;
+
+    &_active {
+        background-color: #FDB935;
+    }
+
+    &:hover {
+        background-color: #FDB935;
+    }
+
+    &:disabled {
+        background-color: #FCDC9D;
+        cursor: auto;
+    }
+}

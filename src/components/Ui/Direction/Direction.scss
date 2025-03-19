@@ -1,0 +1,70 @@
+.direction {
+    max-width: 325px;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+
+    .ant-select-selection-search-input:focus {
+        outline: none;
+    }
+
+    .ant-select-selection-search-input {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #292929;
+    }
+
+    &__from,
+    &__there {
+        text-transform: capitalize;
+        padding: 19px 21px;
+        height: 60px;
+        border-radius: 3px;
+        background: #fff;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        border: none;
+        background-image: url('../../../assets/icons/geolocation.svg');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 17px);
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 18px;
+            color: #e5e5e5;
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+        }
+    }
+}
+
+.ant-select {
+    display: block;
+    margin: 0 !important;
+}
+
+.ant-select-item-option-content {
+    text-transform: capitalize
+}
+
+.ant-select-item-option-content {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    font-variant: all-small-caps;
+    color: #292929;
+}
+
+.ant-select-dropdown {
+    padding: 13px 19px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #f5f4f6;
+}
+
+.ant-select-clear {
+    margin-right: 40px;
+}

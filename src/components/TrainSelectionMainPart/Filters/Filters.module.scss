@@ -1,0 +1,35 @@
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__found {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #928f94;
+    }
+
+    &__sort-and-showing-quantity {
+        display: flex;
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #928f94;
+    }
+
+    &__showing-quantity {
+        font-weight: 400;
+        font-size: 18px;
+        color: #928f94;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        align-items: center;
+    }
+}

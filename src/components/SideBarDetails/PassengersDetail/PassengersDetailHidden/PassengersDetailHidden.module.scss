@@ -1,0 +1,50 @@
+.passengers-details {
+    box-sizing: border-box;
+    background-color: #3E3C41;
+    width: 100%;
+    padding: 35px 27px 11px;
+    min-height: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__button {
+        width: 20px;
+        height: 20px;
+        color: #c4c4c4;;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 2px solid #c4c4c4;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 7.6px;
+        padding-left: -1px;
+        cursor: pointer;
+    }
+
+    &__data-and-action {
+        display: flex;
+        align-items: center;
+        margin-bottom: 33px;
+
+        .passengers-details-data {
+            width: 100%;
+            display: flex;
+
+            .details-human {
+                width: 26px;
+                margin-right: 17px;
+            }
+
+            .details-name {
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                color: #fff;
+                margin: 0;
+            }
+        }
+    }
+}

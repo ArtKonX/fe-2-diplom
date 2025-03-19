@@ -1,0 +1,35 @@
+.train-carriage-info {
+    .number-carriage {
+        background: rgba(255, 168, 0, 0.44);
+        padding: 4px 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__info {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 18px;
+            color: #2d2b2f;
+            font-family: "Roboto", sans-serif;
+        }
+
+        &__list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin-left: 5px;
+            margin: 0;
+        }
+
+        &__text {
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #292929;
+        }
+    }
+}

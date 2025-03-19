@@ -1,0 +1,182 @@
+.progress-bar__item,
+.progress-bar__item-last-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .progress-bar__step {
+        margin-left: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        width: 56px;
+        height: 56px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+    }
+
+    .progress-bar__name {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: #fff;
+        margin-left: 21px;
+    }
+
+    & {
+        background-color: #3E3C41;
+        position: relative;
+
+        &::after {
+            content: '';
+            z-index: 2;
+            height: 49px;
+            width: 50px;
+            background-color: #3E3C41;
+            position: absolute;
+            right: -25px;
+            top: 0;
+            transform: skew(45deg);
+            border-right: 1px solid white;
+        }
+
+        &::before {
+            content: '';
+            z-index: 2;
+            height: 49px;
+            width: 50px;
+            background-color: #3E3C41;
+            position: absolute;
+            right: -25px;
+            bottom: 0;
+            transform: skew(-45deg);
+            border-right: 1px solid white;
+        }
+    }
+
+    &_active {
+        background-color: #FFA800;
+        position: relative;
+
+        &::after {
+            content: '';
+            z-index: 1;
+            height: 49px;
+            width: 50px;
+            background-color: #FFA800;
+            position: absolute;
+            right: -25px;
+            top: 0;
+            transform: skew(45deg);
+            border-right: 1px solid white;
+        }
+
+        &::before {
+            content: '';
+            z-index: 2;
+            height: 49px;
+            width: 50px;
+            background-color: #FFA800;
+            position: absolute;
+            right: -25px;
+            bottom: 0;
+            transform: skew(-45deg);
+            border-right: 1px solid white;
+        }
+    }
+
+    &-last-step_active {
+        background-color: #FFA800;
+        position: relative;
+
+        &::after {
+            content: '';
+            height: 49px;
+            width: 50px;
+            background-color: #FFA800;
+            position: absolute;
+            right: -25px;
+            top: 0;
+            transform: skew(45deg);
+            border-right: 1px solid white;
+        }
+
+        &::before {
+            content: '';
+            height: 49px;
+            width: 50px;
+            background-color: #FFA800;
+            position: absolute;
+            right: -25px;
+            bottom: 0;
+            transform: skew(-45deg);
+            border-right: 1px solid white;
+        }
+    }
+}
+
+.progress-bar__item-last-elem {
+    background-color: #3E3C41;
+    position: relative;
+    width: 100%;
+
+    &::after {
+        content: '';
+        height: 50px;
+        width: 50px;
+        background-color: #3E3C41;
+        position: absolute;
+        right: -51px;
+        top: 0;
+        transform: skew(0);
+        border-right: 1px solid white;
+    }
+
+    &::before {
+        content: '';
+        height: 50px;
+        width: 50px;
+        background-color: #3E3C41;
+        position: absolute;
+        right: -51px;
+        bottom: 0;
+        transform: skew(0);
+        border-right: 1px solid white;
+    }
+
+    &_active {
+        background-color: #FFA800;
+
+        &::after {
+            content: '';
+            height: 50px;
+            width: 50px;
+            background-color: #FFA800;
+            position: absolute;
+            right: -51px;
+            top: 0;
+            transform: skew(0);
+            border-right: 1px solid white;
+        }
+
+        &::before {
+            content: '';
+            height: 50px;
+            width: 50px;
+            background-color: #FFA800;
+            position: absolute;
+            right: -51px;
+            bottom: 0;
+            transform: skew(0);
+            border-right: 1px solid white;
+        }
+    }
+}

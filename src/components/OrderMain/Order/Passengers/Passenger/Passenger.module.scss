@@ -1,0 +1,43 @@
+.passenger {
+    display: flex;
+
+    &__icon-age {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 32px;
+
+        .passenger-icon {
+            width: 68px;
+        }
+
+        .passenger-age {
+            font-weight: 400;
+            font-size: 18px;
+            text-align: center;
+            color: #292929;
+            font-family: "Roboto", sans-serif;
+            margin-top: 17px;
+        }
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        font-weight: 400;
+        font-size: 18px;
+        color: #928f94;
+        font-family: "Roboto", sans-serif;
+        line-height: 1.8rem;
+
+        .passenger-info {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            color: #292929;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 10px;
+        }
+    }
+}

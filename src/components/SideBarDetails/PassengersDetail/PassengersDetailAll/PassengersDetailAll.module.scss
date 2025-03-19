@@ -1,0 +1,35 @@
+.passengers-details-all {
+    margin-bottom: 46px;
+
+    .adults-and-price {
+        margin-bottom: 22px;
+    }
+
+    .adults-and-price,
+    .kids-and-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__adults,
+        &__kids {
+            font-weight: 400;
+            font-size: 18px;
+            color: #e5e5e5;
+            font-family: "Roboto", sans-serif;
+        }
+
+        &__price {
+            font-weight: 700;
+            font-size: 24px;
+            text-align: right;
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+
+            .currency {
+                width: 14px;
+                margin-left: 7px;
+            }
+        }
+    }
+}

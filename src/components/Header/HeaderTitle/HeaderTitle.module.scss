@@ -1,0 +1,15 @@
+.header__title {
+    margin: 0;
+    margin-left: 90px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    font-size: 72px;
+    color: #fff;
+    margin-right: 104px;
+
+    &-bolt {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,35 @@
+.order-confirm-form {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    .order-confirm {
+        background: #ffa800;
+        border-radius: 5px;
+        width: 323px;
+        height: 60px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ffa800;
+        transition: 1s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        &:active {
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            border: 1px solid #ffa800;
+            background-color: transparent;
+            color: #ffa800;
+        }
+    }
+}

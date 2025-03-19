@@ -1,0 +1,26 @@
+.feedback-block {
+    display: flex;
+    align-items: center;
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        color: #292929;
+        font-family: "Roboto", sans-serif;
+        margin-right: 15px;
+    }
+
+    .feedback-list-stars {
+        list-style: none;
+        padding: 0;
+        display: flex;
+
+        &__elem {
+            margin-right: 19px;
+        }
+
+        &__elem:last-child {
+            margin-right: 0;
+        }
+    }
+}

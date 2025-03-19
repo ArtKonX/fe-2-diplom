@@ -1,0 +1,36 @@
+.price-slider {
+    padding: 37px 34px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #3E3C41;
+
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: #fff;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    &__additional-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .from {
+            margin-left: -10.25px;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .before {
+            margin-right: -10.25px;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+}

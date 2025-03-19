@@ -1,0 +1,41 @@
+.number-order-and-price {
+    padding: 60px 82px 39px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    .number-order {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 36px;
+        color: #3e3c41;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .all-price {
+        display: flex;
+        align-items: end;
+        font-weight: 400;
+        font-size: 36px;
+        color: #928f94;
+        font-family: "Roboto", sans-serif;
+
+        .price-and-currency {
+            margin-left: 10px;
+
+            .price {
+                font-weight: 700;
+                font-size: 36px;
+                color: #3e3c41;
+                font-family: "Roboto", sans-serif;
+            }
+
+            .currency {
+                width: 21px;
+                margin-left: 8px;
+            }
+        }
+    }
+}

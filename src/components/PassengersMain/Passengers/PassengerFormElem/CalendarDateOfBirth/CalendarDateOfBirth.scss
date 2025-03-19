@@ -1,0 +1,35 @@
+.calendar-date-of-birth-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    width: 100%;
+    margin-left: 35px;
+
+    &__text {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #928f94;
+        margin-bottom: 11px;
+    }
+
+    .calendar-date-of-birth {
+        height: 50px;
+    }
+}
+
+.ant-picker {
+    transition: 1s;
+    border: 1px solid #928f94;
+    border-radius: 5px;
+
+    &:hover {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+        outline: none;
+        border: 1px solid #928f94;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

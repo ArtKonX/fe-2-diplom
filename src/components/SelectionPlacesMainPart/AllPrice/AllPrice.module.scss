@@ -1,0 +1,15 @@
+.all-price {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 38px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffa800;
+    font-family: "Roboto", sans-serif;
+
+    &__img-currency {
+        width: 14px;
+        margin-left: 10px;
+    }
+}

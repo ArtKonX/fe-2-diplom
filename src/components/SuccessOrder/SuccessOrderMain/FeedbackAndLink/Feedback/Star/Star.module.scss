@@ -1,0 +1,15 @@
+.star-btn {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    .star {
+        width: 48px;
+    }
+}

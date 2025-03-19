@@ -1,0 +1,27 @@
+.type-arriage-btn {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &__img {
+        margin-bottom: 18px;
+    }
+
+    &__type {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #928f94;
+
+        &_active {
+            color: #ffa800;
+        }
+    }
+}

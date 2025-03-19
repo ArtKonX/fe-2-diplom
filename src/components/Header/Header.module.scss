@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 15px;
+
+    .header__title-and-form {
+        display: flex;
+        align-items: center;
+
+        &_container {
+            max-width: 1325px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.header-main {
+    background-image: url('../../assets/backgrounds/main-background.png');
+    border-bottom: 8px solid #FFA800;
+}
+
+.header-different {
+    background-image: url('../../assets/backgrounds/train-selection-background.png');
+}
