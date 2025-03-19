@@ -10,6 +10,7 @@ import arrowDirectionLeft from '../../assets/svg/left-arrow-direction.svg';
 import { useSelector } from 'react-redux';
 import PassengersDetailHidden from './PassengersDetail/PassengersDetailHidden/PassengersDetailHidden';
 import AllPrice from './AllPrice/AllPrice';
+import { useEffect } from 'react';
 
 interface PassengersAgeAndNumber {
     adults?: number,
@@ -112,12 +113,14 @@ const SideBarDetails = () => {
         0
     )
 
+    useEffect(() => {console.log(arrival.direction.placesPrice.length > 0)}, [])
+
     const priceKidsAll = (priceArrivalKidsSum && priceDepartureKidsSum) && priceArrivalKidsSum + priceDepartureKidsSum;
 
     const priceArrivalOptions = arrival.direction.optionsPrice.map(option => option.price).reduce((acc, item) => acc + item, 0);
     const priceDepartureOptions = departure.direction.optionsPrice.map(option => option.price).reduce((acc, item) => acc + item, 0);
 
-    const passengersData = { adults: { number: pricesAndPassengers.directions.passengersAgeAndNumber.adults, price: priceArrivalOptions && priceAdultsAll ? priceAdultsAll + priceArrivalOptions + priceDepartureOptions : priceDepartureAdultsSum + priceDepartureOptions  }, kids: { number: pricesAndPassengers.directions.passengersAgeAndNumber.baby ? pricesAndPassengers.directions.passengersAgeAndNumber.children && pricesAndPassengers.directions.passengersAgeAndNumber.children + pricesAndPassengers.directions.passengersAgeAndNumber.baby : pricesAndPassengers.directions.passengersAgeAndNumber.children, price: priceArrivalOptions ? priceKidsAll : priceDepartureKidsSum} }
+    const passengersData = { adults: { number: pricesAndPassengers.directions.passengersAgeAndNumber.adults, price: arrival.direction.placesPrice.length > 0 && priceAdultsAll ? priceAdultsAll + priceArrivalOptions + priceDepartureOptions : priceDepartureAdultsSum + priceDepartureOptions  }, kids: { number: pricesAndPassengers.directions.passengersAgeAndNumber.baby ? pricesAndPassengers.directions.passengersAgeAndNumber.children && pricesAndPassengers.directions.passengersAgeAndNumber.children + pricesAndPassengers.directions.passengersAgeAndNumber.baby : pricesAndPassengers.directions.passengersAgeAndNumber.children, price: arrival.direction.placesPrice.length > 0 ? priceKidsAll : priceDepartureKidsSum} }
 
     return (
         <div className={styles['sidebar-details']}>
