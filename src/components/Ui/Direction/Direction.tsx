@@ -4,6 +4,8 @@ import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { AutoComplete } from 'antd';
 import axios from 'axios';
 
+import VITE_BACKEND_URL from '../../../environment/environment';
+
 interface DataUserDirectionState {
     directionFrom: string,
     directionThere: string
@@ -19,7 +21,7 @@ const Direction = ({ directionValue, setDataUserDirection, className, name, plac
 
     const searchHandler = (value: string) => {
 
-        axios.get(`${import.meta.env.VITE_BACKEND_URL}/routes/cities?name=${value}`)
+        axios.get(`${VITE_BACKEND_URL}/routes/cities?name=${value}`)
             .then(response => {
                 const data = response.data.map((city: { name: string }) => ({ value: city.name, label: city.name }));
                 setData(data);

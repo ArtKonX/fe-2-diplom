@@ -4,6 +4,8 @@ import {
 } from "@reduxjs/toolkit";
 import apiRequests from "../../api/apiRequests";
 
+import VITE_BACKEND_URL from "../../environment/environment";
+
 const initialState = {
     typesOfTrainCarriage: {
         arrival: [],
@@ -39,7 +41,7 @@ export const typesOfTrainCarriageSlice = createSliceWithThunk({
                     const response = await apiRequests({
                         type: 'fetchTypesOfTrainCarriage',
                         payload: {
-                            url: `${import.meta.env.VITE_BACKEND_URL}/routes`,
+                            url: `${VITE_BACKEND_URL}/routes`,
                             id: id
                         }
                     });
@@ -76,7 +78,7 @@ export const typesOfTrainCarriageSlice = createSliceWithThunk({
                     const response = await apiRequests({
                         type: 'fetchTypesOfTrainCarriage',
                         payload: {
-                            url: `${import.meta.env.VITE_BACKEND_URL}/routes`,
+                            url: `${VITE_BACKEND_URL}/routes`,
                             id: id
                         }
                     });

@@ -5,6 +5,7 @@ import { changeRender, changeStatus } from '../../../../../redux/slices/fetchTra
 import { useDispatch, useSelector } from 'react-redux';
 import dayjs from 'dayjs';
 import axios from 'axios';
+import VITE_BACKEND_URL from '../../../../../environment/environment';
 
 interface Option {
     option: string,
@@ -44,7 +45,7 @@ const Subscribe = () => {
     const dispatch = useDispatch();
 
     const subscribe = (email: string) => {
-        axios.post(`${import.meta.env.VITE_BACKEND_URL}/subscribe`, {
+        axios.post(`${VITE_BACKEND_URL}/subscribe`, {
             email
         })
             .then(response => {

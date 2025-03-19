@@ -4,6 +4,8 @@ import {
 } from "@reduxjs/toolkit";
 import axios from "axios";
 
+import VITE_BACKEND_URL from "../../environment/environment";
+
 interface OrderState {
     dataPassengersArray: Order[] | undefined,
     success: { status: boolean },
@@ -59,7 +61,7 @@ const initialState = {
     dataPassengersArray: [],
     success: { status: false },
     loading: false,
-    url: `${import.meta.env.VITE_BACKEND_URL}/order`,
+    url: `${VITE_BACKEND_URL}/order`,
     error: '',
 } as OrderState
 
