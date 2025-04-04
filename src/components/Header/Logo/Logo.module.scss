@@ -1,8 +1,11 @@
+@import '../../../breakpoints.scss';
+
 .header-logo_container, .header-logo {
     max-width: 1325px;
     margin: 0 auto;
     display: block;
     text-decoration: none;
+    padding: 0 20px;
 
     .header-logo__title {
         font-family: "Roboto", sans-serif;

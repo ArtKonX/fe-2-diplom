@@ -1,3 +1,5 @@
+@import '../../../breakpoints.scss';
+
 .date__from,
 .date__there {
     padding: 19px 21px;
@@ -9,6 +11,26 @@
     width: 100%;
     height: 60px;
     color: #e5e5e5;
+
+    @include xs-breakpoint {
+        max-width: 100%;
+    }
+
+    @include xl-breakpoint {
+        max-width: 100%;
+    }
+
+    @include lg-breakpoint {
+        max-width: 100%;
+    }
+
+    @include md-breakpoint {
+        max-width: 100%;
+    }
+
+    @include sm-breakpoint {
+        max-width: 100%;
+    }
 }
 
 .ant-picker-disabled {
@@ -17,6 +39,10 @@
 
 .date__from {
     margin-right: 47px;
+
+    @include xs-breakpoint {
+        margin-bottom: 35px;
+    }
 }
 
 .ant-picker-input {
@@ -29,6 +55,7 @@
         text-transform: uppercase !important;
     }
 }
+
 .ant-picker-cell-selected {
     .ant-picker-cell-inner {
         background: rgba(255, 168, 0, 0.31) !important;

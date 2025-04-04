@@ -1,6 +1,18 @@
+@import '../../../../../breakpoints.scss';
+
 .contacts__list {
     list-style: none;
     padding: 0;
+
+    @include sm-breakpoint {
+        text-align: center;
+        max-width: 350px;
+    }
+
+    @include xs-breakpoint {
+        text-align: center;
+        max-width: 350px;
+    }
 
     .contact {
         &:not(:last-child) {
@@ -15,6 +27,14 @@
             font-size: 24px;
             color: #e5e5e5;
             font-family: "Roboto", sans-serif;
+
+            @include sm-breakpoint {
+                font-size: 34px;
+            }
+
+            @include xs-breakpoint {
+                font-size: 34px;
+            }
 
             &:hover {
                 color: #FFCA62;

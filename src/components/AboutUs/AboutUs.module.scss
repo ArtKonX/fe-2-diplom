@@ -1,6 +1,12 @@
+@import '../../breakpoints.scss';
+
 .about-us {
     background-color: white;
-    padding: 144px 0 91px;
+    padding: 144px 20px 91px;
+
+    @include xs-breakpoint {
+        padding: 60px 20px 60px;
+    }
 
     &__container {
         max-width: 1325px;
@@ -16,6 +22,11 @@
         font-family: "Roboto", sans-serif;
         margin: 0;
         margin-bottom: 30px;
+
+        @include xs-breakpoint {
+            font-size: 50px;
+            text-align: center;
+        }
     }
 
     &__information {

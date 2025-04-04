@@ -1,3 +1,5 @@
+@import '../../../breakpoints.scss';
+
 .header-menu {
     width: 100%;
     background-color: #292929;
@@ -5,6 +7,20 @@
     display: flex;
     align-items: center;
     margin-bottom: 253px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    @include md-breakpoint {
+        margin-bottom: 100px;
+    }
+
+    @include sm-breakpoint {
+        margin-bottom: 100px;
+    }
+
+    @include xs-breakpoint {
+        margin-bottom: 100px;
+    }
 
     .header-nav_container {
         max-width: 1325px;
@@ -13,9 +29,37 @@
         list-style: none;
         display: flex;
 
+        @include md-breakpoint {
+            justify-content: center;
+        }
+
+        @include sm-breakpoint {
+            justify-content: center;
+        }
+
+        @include xs-breakpoint {
+            max-width: 100%;
+            width: 100%;
+            overflow-x: scroll;
+            justify-content: space-between;
+
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        @include xl-breakpoint {
+            justify-content: start;
+        }
+
         .header-nav__elem {
             &:not(:last-child) {
                 margin-right: 83px;
+
+                @include xs-breakpoint {
+                    margin-right: 9%;
+                }
             }
 
             .header-nav__link {
@@ -25,6 +69,15 @@
                 color: #fff;
                 text-decoration: none;
                 transition: 1s;
+                white-space: nowrap;
+
+                @include sm-breakpoint {
+                    font-size: 25px;
+                }
+
+                @include xs-breakpoint {
+                    font-size: 25px;
+                }
 
                 &:hover {
                     color: #2c99ff;

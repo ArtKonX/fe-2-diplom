@@ -1,3 +1,5 @@
+@import '../../../../breakpoints.scss';
+
 .contacts-block {
     background-color: #2D2B2F;
     width: 100%;
@@ -9,6 +11,16 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+
+        @include sm-breakpoint {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        @include xs-breakpoint {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
 
         .contacts {
             display: flex;
@@ -22,6 +34,18 @@
                 color: #fff;
                 margin: 0;
                 margin-bottom: 22px;
+
+                @include sm-breakpoint {
+                    align-self: center;
+                    font-size: 40px;
+                    margin-bottom: 60px;
+                }
+
+                @include xs-breakpoint {
+                    align-self: center;
+                    font-size: 40px;
+                    margin-bottom: 60px;
+                }
             }
         }
 
@@ -30,6 +54,17 @@
             flex-direction: column;
             align-items: flex-start;
 
+            @include sm-breakpoint {
+                margin-bottom: 80px;
+                align-items: center;
+            }
+
+
+            @include xs-breakpoint {
+                margin-bottom: 80px;
+                align-items: center;
+            }
+
             &__title {
                 font-family: "Roboto", sans-serif;
                 font-weight: 500;
@@ -37,6 +72,18 @@
                 color: #fff;
                 margin: 0;
                 margin-bottom: 22px;
+
+                @include sm-breakpoint {
+                    align-self: center;
+                    font-size: 40px;
+                    margin-bottom: 60px;
+                }
+
+                @include xs-breakpoint {
+                    align-self: center;
+                    font-size: 40px;
+                    margin-bottom: 60px;
+                }
             }
 
             &__title-social {
@@ -46,6 +93,18 @@
                 color: #fff;
                 margin: 0;
                 margin-bottom: 28px;
+
+                @include sm-breakpoint {
+                    align-self: center;
+                    font-size: 40px;
+                    margin-bottom: 60px;
+                }
+
+                @include xs-breakpoint {
+                    align-self: center;
+                    font-size: 40px;
+                    margin-bottom: 60px;
+                }
             }
         }
     }

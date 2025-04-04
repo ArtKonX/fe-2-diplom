@@ -1,0 +1,29 @@
+@mixin xs-breakpoint {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin sm-breakpoint {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin md-breakpoint {
+    @media only screen and (min-width: 1024px) and (max-width: 1289px) {
+        @content;
+    }
+}
+
+@mixin lg-breakpoint {
+    @media only screen and (min-width: 1290px) and (max-width: 1439px) {
+        @content;
+    }
+}
+
+@mixin xl-breakpoint {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}

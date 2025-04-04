@@ -1,13 +1,27 @@
+@import '../../../breakpoints.scss';
+
 .work__advantages {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    padding: 0;
     padding-bottom: 90px;
+
+    @include sm-breakpoint {
+        flex-direction: column;
+    }
+
+    @include xs-breakpoint {
+        flex-direction: column;
+
+        padding-bottom: 30px;
+    }
 
     &-elem {
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
 
         .work__image {
             width: 162px;

@@ -1,3 +1,5 @@
+@import '../../../breakpoints.scss';
+
 .header__title {
     margin: 0;
     margin-left: 90px;
@@ -8,6 +10,22 @@
     font-size: 72px;
     color: #fff;
     margin-right: 104px;
+
+    @include sm-breakpoint {
+        margin-bottom: 100px;
+    }
+
+    @include xs-breakpoint {
+        margin-bottom: 100px;
+    }
+
+    @include md-breakpoint {
+        margin-bottom: 100px;
+    }
+
+    @include xl-breakpoint {
+        margin-bottom: 0px;
+    }
 
     &-bolt {
         font-weight: 700;

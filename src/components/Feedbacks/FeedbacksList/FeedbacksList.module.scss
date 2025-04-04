@@ -1,8 +1,33 @@
+@import '../../../breakpoints.scss';
+
 .feedbacks__list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 122px;
     padding: 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    @include md-breakpoint {
+        padding: 60px 20px 0px;
+        justify-content: center;
+        gap: 120px;
+        margin-bottom: 100px;
+    }
+
+    @include sm-breakpoint {
+        padding: 60px 20px 0px;
+        justify-content: center;
+        gap: 120px;
+        margin-bottom: 100px;
+    }
+
+    @include xs-breakpoint {
+        padding: 60px 20px 0px;
+        justify-content: center;
+        gap: 120px;
+        margin-bottom: 100px;
+    }
 
     .feedback {
         display: flex;
@@ -24,6 +49,18 @@
                 font-size: 24px;
                 color: #000;
                 margin: 0;
+
+                @include md-breakpoint {
+                    font-size: 29px;
+                }
+
+                @include sm-breakpoint {
+                    font-size: 29px;
+                }
+
+                @include xs-breakpoint {
+                    font-size: 29px;
+                }
             }
 
             .feedback__text {
@@ -33,6 +70,18 @@
                 font-size: 18px;
                 color: #928f94;
                 position: relative;
+
+                @include md-breakpoint {
+                    font-size: 23px;
+                }
+
+                @include sm-breakpoint {
+                    font-size: 23px;
+                }
+
+                @include xs-breakpoint {
+                    font-size: 23px;
+                }
 
                 .feedback__symbol {
                     font-family: "Roboto", sans-serif;

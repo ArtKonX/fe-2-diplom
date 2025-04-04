@@ -1,7 +1,17 @@
+@import '../../../../../breakpoints.scss';
+
 .subscribe__form {
     display: flex;
     align-items: end;
     margin-bottom: 44px;
+
+    @include sm-breakpoint {
+        margin-bottom: 80px;
+    }
+
+    @include xs-breakpoint {
+        margin-bottom: 80px;
+    }
 
     .subscribe__input-and-label {
         display: flex;

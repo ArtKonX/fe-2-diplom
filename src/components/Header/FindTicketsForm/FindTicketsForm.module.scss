@@ -1,5 +1,12 @@
+@import '../../../breakpoints.scss';
+
 .header-form,
 .header-form-horizontal {
+
+    @include xs-breakpoint {
+        max-width: 86%;
+        width: 100%;
+    }
 
     .direction-and-date {
         width: 100%;
@@ -11,10 +18,18 @@
             margin-bottom: 61px;
             width: 100%;
 
+            @include xs-breakpoint {
+                margin-bottom: 35px;
+            }
+
             &__actions {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
+                @include xs-breakpoint {
+                    flex-direction: column;
+                }
             }
 
             &__title {
@@ -24,6 +39,13 @@
                 margin: 0;
                 margin: 0 0 7px 7px;
                 font-family: "Roboto", sans-serif;
+
+                @include xs-breakpoint {
+                    text-align: center;
+                    margin: 0;
+                    font-size: 40px;
+                    margin-bottom: 35px;
+                }
             }
 
             .twister-button {
@@ -44,6 +66,11 @@
                     height: 24px;
                 }
 
+                @include xs-breakpoint {
+                    width: 74px;
+                    height: 74px;
+                }
+
                 &:hover {
                     transform: rotate(-360deg);
                 }
@@ -62,12 +89,23 @@
             margin: 0;
             margin: 0 0 7px 7px;
             font-family: "Roboto", sans-serif;
+
+            @include xs-breakpoint {
+                text-align: center;
+                margin: 0;
+                font-size: 40px;
+                margin-bottom: 35px;
+            }
         }
 
         &__actions {
             width: 100%;
             display: flex;
             justify-content: space-between;
+
+            @include xs-breakpoint {
+                flex-direction: column;
+            }
         }
     }
 
@@ -109,6 +147,10 @@
 .header-form {
     background: rgba(41, 41, 41, 0.8);
     padding: 79px 24px 52px 21px;
+
+    @include xs-breakpoint {
+        padding: 35px 24px 35px 21px;
+    }
 }
 
 
